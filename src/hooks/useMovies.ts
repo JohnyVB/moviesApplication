@@ -7,15 +7,16 @@ interface MoviesState {
     popular: Movie[];
     topRated: Movie[];
     upcoming: Movie[];
+    isLoading: boolean;
 }
 
 export const useMovies = () => {
-    const [isLoading, setIsLoading] = useState<boolean>(true);
     const [moviesState, setMoviesState] = useState<MoviesState>({
         nowPlaying: [],
         popular: [],
         topRated: [],
-        upcoming: []
+        upcoming: [],
+        isLoading: true
     });
 
     const getMovies = async () => {
@@ -31,10 +32,9 @@ export const useMovies = () => {
             nowPlaying: resp[0].data.results,
             popular: resp[1].data.results,
             topRated: resp[2].data.results,
-            upcoming: resp[3].data.results
+            upcoming: resp[3].data.results,
+            isLoading: false
         });
-
-        setIsLoading(false);
     }
 
     useEffect(() => {
@@ -43,6 +43,5 @@ export const useMovies = () => {
 
     return {
         ... moviesState,
-        isLoading
     }
 }
