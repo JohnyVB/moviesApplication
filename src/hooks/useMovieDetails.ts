@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import movieDB from '../api/movieDB';
 
 interface DetailsState {
-    details: Details | {};
-    cast: Cast | {};
+    details?: Details;
+    cast: Cast[];
     isLoading: boolean; 
 }
 
@@ -14,8 +14,8 @@ interface Props {
 
 export const useMovieDetails = ({idMovie}: Props) => {
     const [detailsState, setDetailsState] = useState<DetailsState>({
-        details: {},
-        cast: {},
+        details: undefined,
+        cast: [],
         isLoading: true
     })
 
