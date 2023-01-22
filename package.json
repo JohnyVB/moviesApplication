@@ -6,7 +6,8 @@
     "android": "npx react-native run-android",
     "ios": "npx react-native run-ios --simulator='iPhone 14'",
     "cleanGradlew": "cd android/ && ./gradlew clean && cd .. && react-native run-android && npx react-native run-ios --simulator='iPhone 14'",
-    "launch": "npx react-native run-android && npx react-native run-ios --simulator='iPhone 14'"
+    "launch": "npx react-native run-android && npx react-native run-ios --simulator='iPhone 14'",
+    "generateaab": "cd android && ./gradlew clean && ./gradlew bundleRelease && cd .."
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.2",
