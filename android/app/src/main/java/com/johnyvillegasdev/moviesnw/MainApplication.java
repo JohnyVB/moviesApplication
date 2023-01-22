@@ -1,4 +1,4 @@
-package com.moviesapplication;
+package com.johnyvillegasdev.moviesnw;
 
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
@@ -11,7 +11,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
-import com.moviesapplication.newarchitecture.MainApplicationReactNativeHost;
+import com.johnyvillegasdev.moviesnw.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
@@ -76,7 +76,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.moviesapplication.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.johnyvillegasdev.moviesnw.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

@@ -1,4 +1,4 @@
-package com.moviesapplication;
+package com.johnyvillegasdev.moviesnw;
 import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;

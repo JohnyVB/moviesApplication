@@ -1,4 +1,4 @@
-package com.moviesapplication.newarchitecture.modules;
+package com.johnyvillegasdev.moviesnw.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

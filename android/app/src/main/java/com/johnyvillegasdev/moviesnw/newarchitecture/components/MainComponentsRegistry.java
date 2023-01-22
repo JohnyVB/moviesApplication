@@ -1,4 +1,4 @@
-package com.moviesapplication.newarchitecture.components;
+package com.johnyvillegasdev.moviesnw.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
